@@ -43,7 +43,7 @@ function Form() {
       )}
 
       {/* Form title */}
-      <h1>Create Account</h1>
+      <h1>CREATE ACCOUNT</h1>
 
       {/* User registration form */}
       <form className='Form' onSubmit={handleSubmit(onSubmit)} onChange={handleFormChange}>
