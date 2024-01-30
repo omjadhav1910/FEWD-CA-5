@@ -1,21 +1,21 @@
 import React from 'react';
-import BookList from './components/BookList';
-import RegisterForm from './components/RegisterForm';
-import SearchBar from './components/SearchBar';
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Books from './components/BookList';
+import Form from './components/RegisterForm';
+import './App.css';
 
-const App = () => {
+function App() {
+
   return (
-    <div>
-      <h1>Kalvium Books</h1>
-      <SearchBar />
-      <BookList />
-      <button onClick={() => console.log('Register button clicked')}>
-        Register
-      </button>
-      <RegisterForm />
-    </div>
+    <Router>
+      <Routes>
+
+        <Route path="/" element={<Books />} />
+
+        <Route path="/form" element={<Form />} />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;

@@ -1,128 +1,153 @@
-/* styles.css */
+ .main-cointainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: -1vw;
 
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
+ }
 
-header {
-  background-color: #2b2b2b;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
+ .header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #edecec;
+   width: 100%;
+   padding: 1vw 1vw;
+   top: 0;
+   margin-top: 0;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 
-h1 {
-  margin: 0;
-}
-
-.search-bar {
-  margin-bottom: 20px;
-}
-
-.book-list {
-  list-style: none;
-  padding: 0;
-}
-
-.book-list li {
-  border: 1px solid #ddd;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.register-form {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.register-form label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.register-form input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-/* Add this CSS to your component or import it from a separate CSS file */
-
-div {
-  max-width: 800px; /* Adjust the maximum width of the container as needed */
-  margin: auto;
-  padding: 20px;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust column size as needed */
-  gap: 20px;
-}
-
-li {
-  text-align: center;
-}
-
-img {
-  max-width: 100%;
+ }
+.logo-img{
+  width: 250px;
   height: auto;
-  border-radius: 8px; /* Optional: add rounded corners to images */
 }
-.book-cover-app {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
+ .logo {
+   font-size: 30px;
+   color: #ff0000;
+   margin-left: 5vw;
+ }
 
-.book-cover {
-  flex-basis: calc(20% - 20px);
-  text-align: center;
-}
+ .search-bar {
+   padding: 0.25vw;
+   border-radius: 5px 0 0 5px;
+   width: 45vw;
+   height: 3vh;
+   border: 1px solid #cccccc;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid #ced4da;
+   border-radius: 5px;
+   margin-top: 1vw;
+ }
 
-.book-cover img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
+ .Register {
+   height: 3vw;
+   margin-right: 5vw;
+   padding: 0 20px;
+   background-color: red;
+   animation-name: example;
+  animation-duration: 10s;
+   color: #ffffff;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: bold;
+   border-radius: 0.5rem;
+   border: none;
+   transition: all 0.3s ease;
+   box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.3);
 
-.book-title {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  color: #333;
+ }
+ @keyframes example {
+  from {background-color: rgb(255, 255, 255);}
+  to {background-color: rgb(255, 0, 0);}
 }
-/* Optional: Add some additional styling for a cleaner look */
-li {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
+ .List-books {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 2vw;
+   margin-top: 2vw;
+ }
 
-li:hover {
-  transform: scale(1.05);
-}
+ .book {
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   padding: 0.5vw;
+   background-color: #f9f9f9;
+   width: 20px;
+   height: 30vw;
+ }
 
-.register-form button {
-  background-color: #2b2b2b;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-}
+ .book h2 {
+   font-size: 1vw;
+   left: 2rem;
+   color: #333333;
+   margin-bottom: 1vw;
 
-/* Add more styles based on your specific requirements */
+ }
+
+ .book img {
+   width: 100%;
+   height: 75%;
+
+   border-radius: 5px;
+   object-fit: cover;
+ }
+
+ .book p {
+   margin: 5px 0;
+   font-size: 1vw;
+   color: #666666;
+ }
+
+ .book {
+
+   border-radius: 5px;
+   padding: 0.5vw;
+   background-color: #f9f9f9;
+   box-shadow: 0px 2vw 4vw rgba(0, 0, 0, 0.3);
+   width: 250px;
+   height: 500px;
+   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+   transition: all 0.3s ease-out;
+   padding-inline: 20px;
+ }
+
+ .book:hover {
+   background-color: #e0e0e0;
+   box-shadow: 0px 3vw 6vw rgba(0, 0, 0, 0.2);
+   transform: translateY(-4px);
+
+
+ }
+ @media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;  
+    align-items: center;  
+  }
+
+  .search-bar {
+    margin-top: 10px;  
+    width: 90%;
+  }
+
+  .Register {
+    margin-top: 10px; 
+    justify-content: center;
+    height: 8vw;
+  }
+  .book h2 {
+    font-size: 3vw;
+    left: 2rem;
+    color: #333333;
+    margin-bottom: 1vw;
+}
+.book p {
+  font-size: 3vw;
+  left: 2rem;
+  color: #333333;
+  margin-bottom: 1vw;
+}
+}
