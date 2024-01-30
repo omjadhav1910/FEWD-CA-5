@@ -63,7 +63,7 @@ function Books() {
         />
         {/* Link to navigate to the registration form */}
         <Link to="/form">
-          <button className="Register">Register</button>
+          <button className="Register">Register 🔖</button>
         </Link>
       </div>
       {/* Displaying the list of books */}
